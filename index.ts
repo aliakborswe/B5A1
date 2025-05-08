@@ -13,6 +13,10 @@
     }
 
 
-    
+    function concatenateArrays<T>(...arrays: T[][]): T[] {
+        return arrays.reduce((acc, array) => [...acc, ...array], []);
+    }
+
+
 
 }
